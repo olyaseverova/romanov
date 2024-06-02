@@ -1,0 +1,59 @@
+.gallery {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.paintings-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+    padding: 0;
+
+    .paintings-list__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 70px 0;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        // &:nth-of-type(1) {
+        //     order: -2;
+        // }
+    }
+
+    .painting {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 25px;
+        margin: 30px 0 0 0;
+    }
+}
+
+.modal-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    
+    .big-painting {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 15;
+        transform: translate(-50%, -50%);
+    }
+}

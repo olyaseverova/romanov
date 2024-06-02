@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "MADEEvolveSans", sans-serif;
+
+    @media (min-width: $desktop-width) {
+    }
+}
+
+.list {
+    list-style: none;
+}
+
+.text {
+    font-size: 35px;
+    color: white;
+    font-family: "Polyglott", sans-serif;
+}
+
+.none {
+    display: none;
+    background: none;
+}

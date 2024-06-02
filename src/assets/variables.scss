@@ -1,0 +1,26 @@
+$white: #ffffff;
+$black: #000000;
+
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%flex-wrap-space {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@font-face {
+	font-family: "MADEEvolveSans";
+	src: url(../fonts/MADEEvolveSans-Thin.woff);
+}
+
+@font-face {
+	font-family: "Polyglott";
+	src: url(../fonts/Truetypewriter-PolyglOTT.ttf);
+}
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

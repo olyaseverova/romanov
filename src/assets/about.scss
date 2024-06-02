@@ -1,0 +1,83 @@
+.about {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0 385px 0;
+
+    background-repeat: no-repeat;
+    background-size: 400px 365px;
+    background-position: 50% 100%;
+    background-image: url("../img/about-back.png");
+}
+
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 50px 0;
+
+    .romanov-img {
+        width: 500px;
+        height: 533px;
+        margin: 5px 0 40px 0;
+    }
+    
+    .about-info__text {
+        text-indent: 20px;
+        margin: 0;
+        
+        &:first-of-type {
+            width: 850px;
+        }
+    }
+}
+
+.quotes-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 50px 0;
+    padding: 0;
+
+    .quotes-list__item {
+        &:first-of-type {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    .quote {
+        position: relative;
+        margin: 0;
+        // border-left: 4px solid  #474A51;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 3px;
+
+            top: 20px;
+            left: 0;
+
+            background-color:  #474A51;
+        }
+    }
+    
+    .quote-text {
+        margin: 0 0 20px 50px;
+        text-indent: 50px;
+        text-align: justify;
+    }
+
+    .quote-cite {
+        display: block;
+        color: #DCDCDC;
+        font-size: 35px;
+        font-style: italic;
+        text-align: end;
+        font-family: "Polyglott", sans-serif;
+    }
+}
+
+.text-question {
+    text-align: center;
+}

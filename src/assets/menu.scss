@@ -1,0 +1,46 @@
+.menu {
+    height: 100vh;
+
+    @media (min-width: $desktop-width) {
+        background-size: 400px 522px;
+        background-repeat: no-repeat;
+        background-position: 12% 50%;
+        background-image: url("../img/menu-back-desc.png");
+    }
+
+    .pages-list {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        width: 500px;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transform: translate(-50%, -50%);
+
+        .pages-list__item {
+        }
+
+        .page-link {
+            display: block;
+            width: 100%;
+            color: white;
+            font-size: 50px;
+            text-decoration: none;
+            outline: none;
+            transition: 0.2s ease;
+            background-repeat: no-repeat;
+            background-position: 100% 50%;
+            background-size: 80px 47px;
+            background-image: url("../img/white-arrow.png");
+
+            &:hover, &:focus {
+                background-image: url("../img/white-arrow-hover.png");
+            }
+        }
+    }
+}

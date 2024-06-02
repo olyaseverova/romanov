@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    background-size: 450px 495px;
+    background-position: 50% 50%;
+    background-image: url("../img/main-back.png");
+
+    @media (min-width: $desktop-width) {
+        background-size: 550px 527px;
+        background-image: url("../img/main-back-desc.png");
+    }
+
+    .arrows {
+        position: absolute;
+        top: 33%;
+        left: 64%;
+    
+        .black-arrows {
+            // width: 30px;
+            // height: 69px;
+            transform: translate(-9px, -15px);
+        }
+    }
+}
+
+.headline {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 65px;
+    font-weight: lighter;
+    margin: 0;
+    letter-spacing: 5px;
+}
