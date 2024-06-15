@@ -1,0 +1,100 @@
+.contact {
+    position: relative;
+    width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0 50px 0;
+    overflow: hidden;
+    
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        width: 100%;
+        padding: 20px 5% 20px 5%;
+    }
+
+    .arrows {
+        position: absolute;
+        left: 5%;
+        
+        .arrows-link {
+            outline: none;
+            transition: 0.2s ease;
+
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .contact-back {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        height: 317px;
+
+        @media (min-width: $tablet-width) {
+            width: 400px;
+            height: 363px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 550px;
+            height: 499px;
+        }
+    }
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 120px auto 50px auto;
+    
+    @media (min-width: $desktop-width) {
+        margin: 10px auto 50px auto;
+        width: 500px;
+    }
+
+    a {
+        width: 500px;
+        text-align: center;
+        display: block;
+        color: white;
+        outline: none;
+        font-size: 25px;
+        text-decoration: none;
+        transition: 0.2s ease;
+        font-family: "Polyglott", sans-serif;
+
+        @media (min-width: $tablet-width) {
+            font-size: 30px;
+        }
+        
+        @media (min-width: $desktop-width) {
+            font-size: 40px;
+        }
+
+        &:first-of-type {
+            margin: 0 0 25px 0;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+            // text-decoration: solid underline white 1px;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

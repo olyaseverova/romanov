@@ -1,46 +1,151 @@
 .menu {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 22% 0 50px 0;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 230px 300px;
+    background-position: 50% 80%;
+    background-image: url("../img/menu-back.png");
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        max-width: 1000px;
+        background-size: 300px 392px;
+        background-position: 10% 50%;
+    }
 
     @media (min-width: $desktop-width) {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0;
         background-size: 400px 522px;
-        background-repeat: no-repeat;
         background-position: 12% 50%;
-        background-image: url("../img/menu-back-desc.png");
     }
 
     .pages-list {
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        width: 500px;
-        height: 300px;
+        width: 280px;
+        margin: 0 auto;
         padding: 0;
-        margin: 0;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transform: translate(-50%, -50%);
+
+        @media (min-width: $tablet-width) {
+            position: absolute;
+            width: 40%;
+            margin: 0;
+            top: 50%;
+            left: 75%;
+            max-width: 400px;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (min-width: $desktop-width) {
+            top: 50%;
+            left: 60%;
+            width: 500px;
+            height: 300px;
+        }
 
         .pages-list__item {
+            margin: 0 0 10px 0;
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            @media (min-width: $tablet-width) {
+                margin: 0 0 30px 0;
+            }
+
+            @media (min-width: $desktop-width) {
+                margin: 0;
+            }
         }
 
         .page-link {
             display: block;
             width: 100%;
             color: white;
-            font-size: 50px;
+            font-size: 27px;
             text-decoration: none;
             outline: none;
             transition: 0.2s ease;
             background-repeat: no-repeat;
             background-position: 100% 50%;
-            background-size: 80px 47px;
+            background-size: 40px 23px;
             background-image: url("../img/white-arrow.png");
+            font-family: "Polyglott", sans-serif;
 
-            &:hover, &:focus {
+            @media (min-width: $tablet-width) {
+                font-size: 35px;
+                letter-spacing: 4px;
+                background-size: 60px 35px;
+            }
+
+            @media (min-width: $desktop-width) {
+                letter-spacing: 0;
+                background-size: 80px 47px;
+                font-size: 50px;
+            }
+
+            &:hover,
+            &:focus {
                 background-image: url("../img/white-arrow-hover.png");
+            }
+
+            &:active {
+                background-image: url("../img/white-arrow-act.png");
+            }
+
+            .page-name {
+                margin: 0;
             }
         }
     }
+}
+
+.change-language {
+    position: absolute;
+    top: 4%;
+    left: 75%;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s ease;
+    background-color: inherit;
+    font-family: "MADEEvolveSans", sans-serif;
+
+    @media (min-width: $tablet-width) {
+        left: 87%;
+        font-size: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 5%;
+        left: 90%;
+        font-size: 35px;
+    }
+
+    .input-lang {
+        display: none;
+    }
+
+    .label-rus {
+        letter-spacing: 4px;
+    }
+
+    // &:hover, &:focus {
+    //     font-weight: bolder;
+    //     color: black;
+    //     background-color: white;
+    // }
+
+    // &:active {
+    //     opacity: 0.5;
+    // }
 }

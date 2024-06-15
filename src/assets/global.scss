@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 375px;
     background-color: black;
     font-family: "MADEEvolveSans", sans-serif;
 
@@ -19,9 +20,23 @@ body {
 }
 
 .text {
-    font-size: 35px;
+    font-size: 19px;
     color: white;
     font-family: "Polyglott", sans-serif;
+
+    @media (min-width: $tablet-width) {
+        font-size: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 35px;
+    }
+}
+
+.text-eng {
+    @media (min-width: $desktop-width) {
+        font-size: 33px;
+    }
 }
 
 .none {

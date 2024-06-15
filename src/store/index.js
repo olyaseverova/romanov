@@ -2,21 +2,12 @@
 
 // export default createStore({
 //   actions: {
-//     async fetchMenu(ctx) { ctx.commit('updateMenu', await (await fetch("menu.json")).json()) },
-//     async fetchDramatisations(ctx) { ctx.commit('updateDramatisations', await (await fetch("dramatisations.json")).json()) },
-//     async fetchDramatisationsStructured(ctx) { ctx.commit('updateDramatisationsStructured', await (await fetch("dramatisationsStructured.json")).json()) },
-//     async fetchCharacters(ctx) { ctx.commit('updateCharacters', await (await fetch("characters.json")).json()) },
+//     async fetchPaintings(ctx) { ctx.commit('updatePaintings', await (await fetch("paintings.json")).json()) },
 //   },
 //   mutations: {
-//     updateMenu(state, data) { state.menu = data },
-//     updateDramatisations(state, data) { state.dramatisations = data },
-//     updateDramatisationsStructured(state, data) { state.dramatisationsStructured = data },
-//     updateCharacters(state, data) { state.characters = data },
+//     updatePaintings(state, data) { state.menu = data },
 //   },
 //   state: {
-//     menu: [],
-//     dramatisations: [],
-//     dramatisationsStructured: [],
-//     characters: []
+//     paintings: []
 //   },
 // })

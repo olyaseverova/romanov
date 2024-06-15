@@ -1,6 +1,6 @@
 <template>
   <div class="arrows">
-    <router-link to="/menu">
+    <router-link class="arrows-link" to="/menu">
       <img class="black-arrows" :src="image" alt="Стрелки" :width="width" :height="height" />
     </router-link>
   </div>

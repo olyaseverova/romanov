@@ -1,12 +1,32 @@
 .about {
-    width: 1400px;
-    margin: 0 auto;
-    padding: 20px 0 385px 0;
-
+    padding: 20px 5% 385px 5%;
     background-repeat: no-repeat;
-    background-size: 400px 365px;
+    background-size: 375px 342px;
     background-position: 50% 100%;
     background-image: url("../img/about-back.png");
+    
+    @media (min-width: $desktop-width) {
+        padding: 20px 2% 385px 2%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+
+    .arrows {
+        .arrows-link {
+            outline: none;
+            transition: 0.2s ease;
+
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
 }
 
 .about-info {
@@ -15,18 +35,45 @@
     justify-content: space-between;
     margin: 20px 0 50px 0;
 
-    .romanov-img {
-        width: 500px;
-        height: 533px;
-        margin: 5px 0 40px 0;
+    @media (min-width: $tablet-width) {
+        padding: 0;
     }
-    
+
+    @media (min-width: $desktop-width) {
+        margin: 20px 0 100px 0;
+    }
+
+    .romanov-img {
+        width: 340px;
+        height: 362px;
+        margin: 0 auto 40px auto;
+
+        @media (min-width: $tablet-width) {
+            width: 500px;
+            height: 533px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 500px;
+            height: 533px;
+            margin: 5px 0 40px 0;
+        }
+    }
+
+    .romanov-img-eng {
+        @media (min-width: $desktop-width) {
+            margin: 10px 0 40px 0;
+        }
+    }
+
     .about-info__text {
         text-indent: 20px;
         margin: 0;
-        
-        &:first-of-type {
-            width: 850px;
+
+        @media (min-width: $desktop-width) {
+            &:first-of-type {
+                width: 800px;
+            }
         }
     }
 }
@@ -35,46 +82,81 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 0 50px 0;
+    margin: 0 0 70px 0;
     padding: 0;
+
+    @media (min-width: $desktop-width) {
+        margin: 0 0 100px 0;
+    }
 
     .quotes-list__item {
         &:first-of-type {
-            margin: 0 0 20px 0;
+            margin: 0 0 40px 0;
+
+            @media (min-width: $desktop-width) {
+                margin: 0 0 50px 0;
+            }
         }
     }
 
     .quote {
         position: relative;
         margin: 0;
-        // border-left: 4px solid  #474A51;
 
         &::before {
             position: absolute;
             content: "";
-            width: 60px;
-            height: 3px;
+            width: 25px;
+            height: 2px;
 
-            top: 20px;
+            top: 10px;
             left: 0;
 
-            background-color:  #474A51;
+            background-color: #474a51;
+
+            @media (min-width: $tablet-width) {
+                width: 35px;
+                height: 3px;
+                top: 13px;
+            }
+
+            @media (min-width: $desktop-width) {
+                width: 60px;
+                top: 20px;
+            }
         }
     }
-    
+
     .quote-text {
-        margin: 0 0 20px 50px;
-        text-indent: 50px;
+        margin: 0 0 15px 0;
+        text-indent: 35px;
         text-align: justify;
+
+        @media (min-width: $tablet-width) {
+            text-indent: 45px;
+        }
+
+        @media (min-width: $desktop-width) {
+            text-indent: 50px;
+            margin: 0 0 20px 50px;
+        }
     }
 
     .quote-cite {
         display: block;
-        color: #DCDCDC;
-        font-size: 35px;
+        color: #dcdcdc;
+        font-size: 20px;
         font-style: italic;
         text-align: end;
         font-family: "Polyglott", sans-serif;
+
+        @media (min-width: $tablet-width) {
+            font-size: 27px;
+        }
+
+        @media (min-width: $desktop-width) {
+            font-size: 35px;
+        }
     }
 }
 
