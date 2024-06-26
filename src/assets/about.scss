@@ -1,16 +1,23 @@
 .about {
-    padding: 20px 5% 385px 5%;
+    position: relative;
+    padding: 20px 5% 200px 5%;
     background-repeat: no-repeat;
-    background-size: 375px 342px;
+    background-size: 200px 182px;
     background-position: 50% 100%;
     background-image: url("../img/about-back.png");
     
-    @media (min-width: $desktop-width) {
-        padding: 20px 2% 385px 2%;
-        max-width: 1440px;
-        margin: 0 auto;
+    @media (min-width: $tablet-width) {
+        padding: 20px 5% 250px 5%;
+        background-size: 250px 228px;
     }
-
+    
+    @media (min-width: $desktop-width) {
+        width: 1400px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 0 385px 0;
+        background-size: 375px 342px;
+    }
 
     .arrows {
         .arrows-link {
@@ -130,7 +137,6 @@
     .quote-text {
         margin: 0 0 15px 0;
         text-indent: 35px;
-        text-align: justify;
 
         @media (min-width: $tablet-width) {
             text-indent: 45px;

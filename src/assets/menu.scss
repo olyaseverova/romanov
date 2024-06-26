@@ -1,8 +1,7 @@
 .menu {
     position: relative;
-    max-width: 375px;
     margin: 0 auto;
-    padding: 22% 0 50px 0;
+    padding: 20px 5% 50px 5%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 230px 300px;
@@ -10,23 +9,39 @@
     background-image: url("../img/menu-back.png");
 
     @media (min-width: $tablet-width) {
-        padding: 0;
-        max-width: 1000px;
+        padding: 20px 5%;
+        max-width: 100%;
         background-size: 300px 392px;
         background-position: 10% 50%;
     }
-
+    
     @media (min-width: $desktop-width) {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0;
+        width: 1400px;
+        max-width: 1400px;
+        padding: 20px 0;
         background-size: 400px 522px;
         background-position: 12% 50%;
     }
 
+    .arrows {
+        .arrows-link {
+            outline: none;
+            transition: 0.2s ease;
+
+            &:hover,
+            &:focus {
+                opacity: 0.7;
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
     .pages-list {
         width: 280px;
-        margin: 0 auto;
+        margin: 50px auto 0 auto;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -110,7 +125,7 @@
 .change-language {
     position: absolute;
     top: 4%;
-    left: 75%;
+    left: 95%;
     color: white;
     border: none;
     font-size: 20px;
@@ -118,6 +133,7 @@
     outline: none;
     transition: 0.2s ease;
     background-color: inherit;
+    transform: translate(-100%, 0);
     font-family: "MADEEvolveSans", sans-serif;
 
     @media (min-width: $tablet-width) {

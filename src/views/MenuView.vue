@@ -1,5 +1,6 @@
 <template>
   <div class="menu">
+    <ArrowsComp image="arrows-white.png" width="30" height="76" link="/"/>
     <div class="change-language">
       <label class="label-lang" id="eng">
         <input class="input-lang" type="radio" id="eng" name="lang" value="eng" @click="changeLang" />
@@ -26,8 +27,14 @@
 
 
 <script>
+import ArrowsComp from "../components/ArrowsComp.vue";
+
 export default {
   name: 'HomeView',
+
+  components: {
+    ArrowsComp
+  },
 
   data() {
     return {
@@ -48,7 +55,7 @@ export default {
           name: "контакты",
           nameENG: "contacts",
           link: "/contacts",
-          linkENG: "/contacts"
+          linkENG: "/contactseng"
         }
       ]
     }

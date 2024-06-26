@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <ArrowsComp image="arrows-white.png" width="30" height="76" />
+        <ArrowsComp image="arrows-white.png" width="30" height="76" link="/menueng" />
         <div class="about-info">
             <img class="romanov-img romanov-img-eng" src="@/img/romanov.png" alt="Владимир Романов" />
             <p class="about-info__text text text-eng">Vladimir Romanov was born in Leningrad in 1974.

@@ -1,8 +1,8 @@
 .gallery {
-    padding: 20px 0 50px 0;
+    padding: 20px 5% 50px 5%;
     
     @media (min-width: $tablet-width) {
-        padding: 20px 20px 50px 20px;
+        padding: 20px 0 50px 0;
     }
     
     @media (min-width: $desktop-width) {
@@ -12,18 +12,21 @@
     }
 
     .arrows {
-        width: 355px;
-        margin: 0 auto;
+        // width: 355px;
+        // margin: 0 auto;
 
         @media (min-width: $tablet-width) {
-            width: auto;
-            max-width: 1000px;
+            // width: auto;
+            padding: 0 5%;
         }
 
         @media (min-width: $desktop-width) {
-            width: 1440px;
-            max-width: 100%;
+            padding: 0;
         }
+
+        // @media (min-width: $desktop-width) {
+        //     margin: 0;
+        // }
 
         .arrows-link {
             outline: none;
@@ -44,14 +47,18 @@
 .paintings-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: space-around;
+    // justify-content: space-evenly;
+    // justify-content: center;
     align-items: center;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     padding: 0;
-    width: 355px;
+    width: 337px;
 
     @media (min-width: $tablet-width) {
         width: 100%;
+        margin: 0 auto;
         max-width: 1000px;
     }
 
@@ -62,10 +69,20 @@
     .paintings-list__item {
         display: flex;
         flex-direction: column;
-        margin: 0 0 70px 0;
+        margin: 35px 0;
         transition: 0.2s ease;
+
+        &:first-of-type {
+            margin: 0 0 35px 0;
+        }
+
+        @media (min-width: $tablet-width) {
+            &:nth-of-type(2) {
+                margin: 0 0 35px 0;
+            }
+        }
         
-        &:nth-of-type(63) {
+        &:nth-of-type(65) {
             margin: 0;
             
             @media (min-width: $tablet-width) {
@@ -73,7 +90,7 @@
             }
         }
 
-        &:nth-of-type(64) {
+        &:nth-of-type(66) {
             display: none;
 
             @media (min-width: $tablet-width) {
@@ -271,13 +288,19 @@
         }
         #A63 {
             order: 63;
+        }
+        #A64 {
+            order: 64;
+        }
+        #A65 {
+            order: 65;
             margin: 0 auto;
 
             .description {
                 margin: 30px auto 0 auto;
             }
         }
-        #A64 {
+        #A66 {
             display: none;
         }
     }
@@ -311,12 +334,13 @@
         }
 
         @media (min-width: $desktop-width) {
-            width: 550px;
+            width: 530px;
+            // max-height: 650px;
         }
     }
 
     .description {
-        width: 355px;
+        width: 337px;
         text-align: center;
         font-size: 19px;
         margin: 30px 0 0 0;
@@ -361,7 +385,7 @@
         transform: translate(-50%, -50%);
 
         @media (min-width: $desktop-width) {
-            width: 550px;
+            // width: 550px;
         }
     }
 
