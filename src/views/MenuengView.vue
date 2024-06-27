@@ -30,7 +30,7 @@
   import ArrowsComp from "../components/ArrowsComp.vue";
   
   export default {
-    name: 'HomeView',
+    name: 'MenuengView',
   
     components: {
       ArrowsComp

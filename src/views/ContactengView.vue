@@ -17,7 +17,7 @@
 import ArrowsComp from "../components/ArrowsComp.vue";
 
 export default {
-    name: 'ContactView',
+    name: 'ContactengView',
 
     components: {
         ArrowsComp

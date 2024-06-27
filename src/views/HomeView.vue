@@ -14,6 +14,8 @@
 import ArrowsComp from "../components/ArrowsComp.vue";
 
 export default {
+  name: 'HomeView',
+
   components: {
     ArrowsComp
   }
