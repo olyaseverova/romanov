@@ -7,7 +7,7 @@
                 <a href="mailto:vladimir.v.romanov@mail.ru">vladimir.v.romanov@mail.ru</a>
                 <a href="https://www.instagram.com/vladimirromanovv_?igsh=MTU5dDIxbWlsYm51ZA==">inst: vladimirromanovv_</a>
             </div>
-            <img class="contact-back" src="contact-back.png" />
+            <img class="contact-back" src="contact-back.jpg" />
         </div>
 
     </div>

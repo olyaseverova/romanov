@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: 230px 300px;
     background-position: 50% 80%;
-    background-image: url("../img/menu-back.png");
+    background-image: url("../img/menu-back.jpg");
 
     @media (min-width: $tablet-width) {
         padding: 20px 5%;
@@ -137,13 +137,13 @@
     font-family: "MADEEvolveSans", sans-serif;
 
     @media (min-width: $tablet-width) {
-        left: 87%;
+        left: 92%;
         font-size: 30px;
     }
 
     @media (min-width: $desktop-width) {
         top: 5%;
-        left: 90%;
+        left: 100%;
         font-size: 35px;
     }
 

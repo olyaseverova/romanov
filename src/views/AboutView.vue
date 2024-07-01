@@ -3,7 +3,7 @@
     <ArrowsComp image="arrows-white.png" width="30" height="76" link="/menu" />
     
     <div class="about-info">
-      <img class="romanov-img" src="@/img/romanov.png" alt="Владимир Романов" />
+      <img class="romanov-img" src="@/img/romanov.jpg" alt="Владимир Романов" />
       <p class="about-info__text text">Владимир Романов родился в Ленинграде в 1974г.
         В 1992 г. окончил Среднюю Художественную Школу
         им. Б.В. Иогансона, в 1999-м - институт им. И.Е.

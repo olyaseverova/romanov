@@ -2,7 +2,7 @@
     <div class="about">
         <ArrowsComp image="arrows-white.png" width="30" height="76" link="/menueng" />
         <div class="about-info">
-            <img class="romanov-img romanov-img-eng" src="@/img/romanov.png" alt="Владимир Романов" />
+            <img class="romanov-img romanov-img-eng" src="@/img/romanov.jpg" alt="Владимир Романов" />
             <p class="about-info__text text text-eng">Vladimir Romanov was born in Leningrad in 1974.
                 Leaving the B. Ioganson Secondary Art School in 1992, Vladimir went on to continue his education at the Ilya
                 Repin Institute of Arts, the book graphics workshop supervised by Professor A.A. Pakhomov, which he
